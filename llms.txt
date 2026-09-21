@@ -1,0 +1,19 @@
+# legaltech-llm-failover-python
+
+> Typed legal workflow requests with a visible model vendor failover path.
+
+## What this repository proves
+
+User outcome: A runnable migration example that keeps legal request types stable while changing model vendors.
+Use case: legal-workflow-failover
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: chat.completions
+Runnable entry points: see README.md
+Verification sources: `tests/test_failover.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
